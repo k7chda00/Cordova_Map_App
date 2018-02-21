@@ -1,0 +1,35 @@
+{
+    "name": "com.example.gmapapp0",
+    "displayName": "GMapApp",
+    "version": "1.0.0",
+    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Apache Cordova Team",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-ios": "^4.5.4",
+        "cordova-plugin-geolocation": "^4.0.1",
+        "cordova-plugin-googlemaps": "^2.2.5",
+        "cordova-plugin-googlemaps-sdk": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk.git#2.6.0",
+        "cordova-plugin-whitelist": "^1.3.3"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-googlemaps": {
+                "API_KEY_FOR_IOS": "AIzaSyBQrKaZNkPTpu7FpAS6yvq1xOIVcUsFpYg",
+                "LOCATION_WHEN_IN_USE_DESCRIPTION": "(your custom message)",
+                "LOCATION_ALWAYS_USAGE_DESCRIPTION": "(your custom message)"
+            },
+            "cordova-plugin-geolocation": {
+                "GEOLOCATION_USAGE_DESCRIPTION": "GMAPAPP what to use your location"
+            }
+        },
+        "platforms": [
+            "ios"
+        ]
+    }
+}

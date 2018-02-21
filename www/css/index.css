@@ -1,0 +1,139 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+ * {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    overflow: auto;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    text-transform:uppercase;
+}
+
+/* Portrait layout (default) */
+.app {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /*padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    /*margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        /*padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        /*margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+#deviceready {
+    width: 90%; }
+
+h1 {
+    font-size:24px;
+    margin: 0px;
+    margin-top: 30px;
+    font-weight:normal;
+    overflow:visible;
+    padding:0px;
+    text-align:center; }
+
+button {
+    margin: 5px 0;
+    width: 100px;
+    height: 40px;
+    color: #000;
+    border-radius:20px;
+    background-color: #fff; }
+
+    button#getLongLat{
+        margin: 0;
+    }
+
+    #hideMap {
+        display: none; }
+
+        #hideMap.visible {
+            width: 100%;
+            display: block;
+            border-radius: none; }
+
+button:active {
+    color: #fff;
+    background-color: #000; }
+ 
+#map_canvas{
+    width: 100%;
+    height: 300px;
+    margin: 10px 0;
+}
+
+.myForm {
+    height: 40px; 
+    display: flex;
+    justify-content: center }
+
+.myInput {
+    width: 65%;
+    height: 40px;
+    margin-right: 5%;
+    padding-left: 10px;
+    border-radius: 20px;
+    border: 1px solid black; }
+
+    .myInput input {
+        height: 36px;
+        border: none;
+        border-radius: 0;
+        border-left: 1px solid black;
+        background-color: transparent; }
+
+
+
+.locations {
+    width: 100%;
+    display: flex;
+    margin-top:10px;
+    justify-content: space-around; }
+
+.locations div {
+     width: auto; }
+
+.locations p {
+    margin-top: 4px;
+    margin-bottom: 0; }
+
+#distance {
+    text-align: center;
+}
+
+#betweenPoints{
+    width: 150px;
+}

@@ -1,0 +1,40 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.googlemaps.ios": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk.git#2.6.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-googlemaps": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-googlemaps"
+    },
+    "is_top_level": true,
+    "variables": {
+      "API_KEY_FOR_IOS": "AIzaSyBQrKaZNkPTpu7FpAS6yvq1xOIVcUsFpYg",
+      "LOCATION_WHEN_IN_USE_DESCRIPTION": "(your custom message)",
+      "LOCATION_ALWAYS_USAGE_DESCRIPTION": "(your custom message)"
+    }
+  },
+  "cordova-plugin-geolocation": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-geolocation@4.0.1"
+    },
+    "is_top_level": true,
+    "variables": {
+      "GEOLOCATION_USAGE_DESCRIPTION": "GMAPAPP what to use your location"
+    }
+  }
+}

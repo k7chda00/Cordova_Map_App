@@ -1,0 +1,1 @@
+{"plugins":["cordova-plugin-whitelist","com.googlemaps.ios","cordova-plugin-googlemaps","cordova-plugin-geolocation"]}
